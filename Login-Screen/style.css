@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-login {
+    /*vw = view-widht (largura) and vh = view-height (altura)*/
+    width: 100vw;
+    height: 100vh;
+    background-color: #201b2c;
+    display: flex;
+
+    /*Align things on the X axis*/
+    justify-content: center;
+
+    /*Align thing on the Y axis*/
+    align-items: center;
+}
+
+.left-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*Turn the flex horizontal into collumn*/
+    flex-direction: column;
+}
+
+.left-login h1 {
+    color: #6fecb2;
+    font-size: 3vw;
+}
+
+.gif {
+    width: 25vw;
+}
+
+.right-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login {
+    /*60% of 50vw right-login*/
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* _1_ top and bottom , _2_ right and left*/
+    padding: 30px 35px;
+    background: #2f2841;
+    border-radius: 20px;
+    /*Box Shaddow: 1º X axis, 2º Y axis*, 3º Blur, 4º Color*/
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.text-field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /*When it's in flex-direction, X axis and Y axis are inverted*/
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.text-field input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    /*If you put only one value, it suits for X and Y axis*/
+    padding: 15px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.text-field label {
+    color: #f0ffffde;
+    margin-bottom: 10px;
+    font-size: 14pt;
+}
+
+.text-field input::placeholder {
+    color: #f0ffff94;
+}
+
+.right-login a {
+    color: #62bb91;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 16px 0px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #2b134b;
+    background-color: #6fecb2;
+    cursor: pointer;
+    /*1 - X axis. 2 - Y axis. 3 - Blur. 4 - Spread*/
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+}
