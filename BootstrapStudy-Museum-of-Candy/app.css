@@ -3,6 +3,11 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
+div, section {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
 .prim {
     margin-bottom: 80px;
 }
